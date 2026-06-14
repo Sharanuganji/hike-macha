@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import FeaturedTreks from "../components/FeaturedTreks";
 import UpcomingDepartures from "../components/UpcomingDepartures";
 import WhyHikeMacha from "../components/WhyHikeMacha";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -39,6 +40,18 @@ export default function Home() {
             </button>
           </div>
         </div>
+        <div className="space-y-6 text-xl">
+          <p>📞 +91 80735 25884</p>
+          <p>💬 WhatsApp: +91 80735 25884</p>
+          <p>📷 Instagram: @hikemacha</p>
+        </div>
+
+        <a
+          href="https://wa.me/918073525884"
+          className="inline-block mt-8 bg-green-600 text-white px-6 py-3 rounded-xl"
+        >
+          Chat on WhatsApp
+        </a>
       </section>
       <FeaturedTreks />
       <UpcomingDepartures />
@@ -56,6 +69,7 @@ export default function Home() {
           Book Your Trek
         </button>
       </section>
+      <WhatsAppButton />
     </main>
   );
 }
