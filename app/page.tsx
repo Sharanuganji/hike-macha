@@ -3,6 +3,7 @@ import FeaturedTreks from "../components/FeaturedTreks";
 import UpcomingDepartures from "../components/UpcomingDepartures";
 import WhyHikeMacha from "../components/WhyHikeMacha";
 import WhatsAppButton from "../components/WhatsAppButton";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -31,13 +32,19 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <button className="bg-green-700 hover:bg-green-800 px-8 py-4 rounded-lg font-semibold">
+            <Link
+              href="/treks"
+              className="bg-green-700 px-8 py-4 rounded-lg"
+            >
               Explore Treks
-            </button>
+            </Link>
 
-            <button className="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-lg font-semibold">
+            <Link
+              href="/contact"
+              className="bg-orange-500 px-8 py-4 rounded-lg"
+            >
               Upcoming Departures
-            </button>
+            </Link>
           </div>
         </div>
         <div className="space-y-6 text-xl">
@@ -65,11 +72,17 @@ export default function Home() {
           Join upcoming treks across the Western Ghats.
         </p>
 
-        <button className="bg-white text-green-700 px-8 py-4 rounded-xl font-bold">
-          Book Your Trek
-        </button>
+        <a
+          href="https://wa.me/918073525884?text=Hi%20Hike%20Macha,%20I%20would%20like%20to%20book%20a%20trek."
+          target="_blank"
+          className="bg-orange-500 text-white px-5 py-3 rounded-lg"
+        >
+          Book Now
+        </a>
       </section>
       <WhatsAppButton />
+      <Footer />
     </main>
+    
   );
 }

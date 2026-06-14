@@ -4,20 +4,25 @@ const treks = [
     image: "/images/kodachadri.jpg",
     duration: "2 Days",
     difficulty: "Moderate",
+    slug: "kodachadri",
   },
   {
     name: "Kudremukh",
     image: "/images/kudremukh.jpg",
     duration: "2 Days",
     difficulty: "Moderate",
+    slug: "kudremukh",
   },
   {
     name: "Kumara Parvatha",
     image: "/images/kumara.jpg",
     duration: "2 Days",
     difficulty: "Hard",
+    slug: "kumara-parvatha",
   },
 ];
+
+import Link from "next/link";
 
 export default function FeaturedTreks() {
   return (
@@ -53,9 +58,12 @@ export default function FeaturedTreks() {
                   <span>{trek.difficulty}</span>
                 </div>
 
-                <button className="mt-5 bg-green-700 text-white px-5 py-2 rounded-lg">
-                  View Trek
-                </button>
+                <Link
+                    href="/treks/kodachadri"
+                    className="mt-5 inline-block bg-green-700 text-white px-5 py-2 rounded-lg"
+                >
+                    View Trek
+                </Link>
               </div>
             </div>
           ))}
