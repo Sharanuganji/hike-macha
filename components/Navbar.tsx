@@ -25,11 +25,11 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex gap-8 text-white">
-          <a href="#">Home</a>
-          <a href="#">Treks</a>
-          <a href="#">Gallery</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a href="/">Home</a>
+          <a href="/treks">Treks</a>
+          <a href="/gallery">Gallery</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
         </div>
       </div>
     </nav>

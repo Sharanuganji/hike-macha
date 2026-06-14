@@ -1,7 +1,18 @@
-export default function Page() {
+export default function ContactPage() {
   return (
-    <div className="pt-32 text-center">
-      <h1 className="text-5xl font-bold">Coming Soon</h1>
-    </div>
+    <main className="pt-32 px-6 min-h-screen">
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-5xl font-bold mb-8">
+          Contact Us
+        </h1>
+
+        <div className="space-y-4 text-lg">
+          <p>📞 Phone: Your Number</p>
+          <p>💬 WhatsApp: Your Number</p>
+          <p>📧 Email: info@hikemacha.com</p>
+          <p>📷 Instagram: @hikemacha</p>
+        </div>
+      </div>
+    </main>
   );
 }
