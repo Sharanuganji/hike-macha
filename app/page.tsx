@@ -3,6 +3,7 @@ import FeaturedTreks from "../components/FeaturedTreks";
 import UpcomingDepartures from "../components/UpcomingDepartures";
 import WhyHikeMacha from "../components/WhyHikeMacha";
 import WhatsAppButton from "../components/WhatsAppButton";
+import Footer from "../components/Footer";
 import Link from "next/link";
 
 export default function Home() {
@@ -83,6 +84,5 @@ export default function Home() {
       <WhatsAppButton />
       <Footer />
     </main>
-    
   );
 }
